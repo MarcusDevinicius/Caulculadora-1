@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --azul: #5CC8FF;
+    --preto: #000000;
+}
+
+body, html {
+    background-color: lightgoldenrodyellow;
+}
+
+header {
+    
+    height: 90px;
+    width: 100vw;
+    line-height: 90px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main #calculator {
+    background-color: white;
+    height: 500px;
+    width: 50vw;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.671);
+}
+
+main #calculator #dtela {
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main #calculator #dtela #tela {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 40px;
+    width: 90%;
+    height: 70px;
+    padding: 5px;
+    border: 3px solid black;
+} 
+
+main #calculator #botoes {
+    padding: 8px;
+    gap: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 400px;
+}
+
+main #calculator #botoes button {
+    width: 11vw;
+    height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+main #calculator #botoes button:hover {
+    transform: translate(2px, 2px);
+    border: 1px solid black;
+}

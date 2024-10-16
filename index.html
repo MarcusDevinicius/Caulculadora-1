@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
     <main>
         <section id="calculator">
-            
+            <div id="dtela">
+                <div id="tela"></div>
+            </div>
+            <nav id="botoes">
+                <button id="sete" onclick="click7()">7</button>
+                <button id="oito" onclick="click8()">8</button>
+                <button id="nove" onclick="click9()">9</button>
+                <button id="div" onclick="clickdiv()">:</button>
+                <button id="quatro" onclick="clcick4()">4</button>
+                <button id="cinco" onclick="click5()">5</button>
+                <button id="seis" onclick="click6()">6</button>
+                <button id="vzs" onclick="clickvzs()">X</button>
+                <button id="um" onclick="click1()">1</button>
+                <button id="dois" onclick="click2()">2</button>
+                <button id="tress" onclick="click3()">3</button>
+                <button id="mais" onclick="clickmais()">+</button>
+                <button id="zero" onclick="click0()">0</button>
+                <button id="pont" onclick="clickpont()">.</button>
+                <button id="igual" onclick="clickigual()">=</button>
+                <button id="men" onclick="clickmen()">-</button>
+            </nav>
         </section>
     </main>
+
+    <script>
+        var tela = document.getElementById('tela')
+        var sete = document.getElementById('sete')
+
+        function click7() {
+            tela.innerHTML += '7'
+            var tela = sete
+        }
+        function click8() {
+            tela.innerHTML += '8'
+        }
+    </script>
 </body>
 </html>
