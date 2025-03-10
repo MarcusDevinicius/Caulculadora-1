@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .calculator-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(22, 22, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .calculator-container > .calculator {
+    background: white;
+    width: 400px;
+    height: 600px;
+    display: grid;
+}
+
+.calculator-container > .calculator > .calculator-display {
+    width: 90%;
+    height: 90px;
+    background: black;
+}
