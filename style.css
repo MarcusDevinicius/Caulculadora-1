@@ -25,12 +25,54 @@ main > .calculator-container {
 main > .calculator-container > .calculator {
     background: white;
     width: 400px;
-    height: 600px;
+    height: 550px;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    row-gap: 5px;
 }
 
 .calculator-container > .calculator > .calculator-display {
     width: 90%;
     height: 90px;
     background: black;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.calculator-container > .calculator > .button-container {
+    background: red;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    /* row-gap: 5px; */
+    column-gap: 5px; 
+}
+
+.calculator-container > .calculator > .button-container button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 100px;
+    align-self: center;
+}
+
+.calculator-container > .calculator > .button-container .btn-0 {
+    grid-column: 2;
+}
+
+.calculator-container > .calculator > .button-container .btn-som {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.calculator-container > .calculator > .button-container .btn-vzs {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.calculator-container > .calculator > .button-container .btn-div {
+    grid-column: 4;
+    grid-row: 2;
 }
