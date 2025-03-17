@@ -30,3 +30,6 @@ function addOnDisplay(button) {
 
 pegandoTeclas();
 
+
+
+//Preciso arrumar um jeito de colocar o número antes do sinal em uma variavel e dentro de uma funçao da operação e dentro dessa função ter o calculo com os dois numeros na variavel. 
